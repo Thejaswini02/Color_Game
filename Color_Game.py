@@ -45,17 +45,17 @@ root = Tk()
 root.title("My Color Game")
 root.geometry("375x200")
 root.resizable(0,0)
-
-instructions = Label(root, text="Type the color of the words, and not the word text!", font=("Helvetica", 12))
+root.config(background="Pink")
+instructions = Label(root, text="Type the color of the words, and not the word text!", font=("Times New Roman", 12),background="Pink")
 instructions.pack()
 
-ScoreLabel = Label(root, text="Press Enter to Start", font=("Helvetica", 12))
+ScoreLabel = Label(root, text="Press Enter to Start", font=("Times New Roman", 12),background="Pink")
 ScoreLabel.pack()
 
-timeLabel = Label(root, text="Time Left: " + str(Time_left), font=("Helvetica", 12))
+timeLabel = Label(root, text="Time Left: " + str(Time_left), font=("Times New Roman", 12),background="Pink")
 timeLabel.pack()
 
-label = Label(root, font=("Helvetica", 12))
+label = Label(root, font=("Times New Roman", 12),background="Pink")
 label.pack()
 
 e = Entry(root)
